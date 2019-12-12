@@ -13,6 +13,36 @@ body {
 
 /* header */
 /* please coding header section here  */
+#header_bar {
+  width: 100%;
+  height: 50px;
+  background-color: #C1D8E8;
+  color: #3b3b3b;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_headerlogo img {
+  display: inline-block;
+  height: 40px;
+  width: auto;
+}
+
+.header_right {
+  display: flex;
+}
+
+.header_searchbox {
+  height: 20px;
+  border: 2px solid #3b3b3b;
+}
+
+.header_search {
+  
+  display: flex;
+}
+
 /* header */
 
 /* main */
