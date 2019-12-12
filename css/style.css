@@ -47,6 +47,18 @@ body {
 
 /* main */
 /* please coding main section here  */
+.main_container{
+  width:700px;
+  height:700px;  
+  margin:auto;
+}
+
+.main_topic-title{
+  font-size: 42px;
+  color: #115843;
+  font-family: Kadwa,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 15px;
+}
 /* main */
 
 /* footer */
