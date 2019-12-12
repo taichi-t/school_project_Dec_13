@@ -21,4 +21,9 @@ body {
 
 /* footer */
 /* please coding footer section here  */
+.footer_section {
+  width: 100%;
+  height: 200px;
+  background-color: #c1d8e8;
+}
 /* footer */
