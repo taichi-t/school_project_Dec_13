@@ -49,7 +49,7 @@ body {
 /* please coding main section here  */
 .main_container{
   width:700px;
-  height:700px;  
+  height:auto;  
   margin:auto;
 }
 
