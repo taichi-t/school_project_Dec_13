@@ -22,8 +22,8 @@
     <main>
       <div class="mai-left">
         <ul class="mai-listwrap">
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
+          <li class="mai_pagelist"><a href="./topic1.html">Overflow</a></li>
+          <li class="mai_pagelist"><a href="#">The position Property</a></li>
           <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
           <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
           <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
@@ -34,33 +34,38 @@
     <main>
       <!--title-->
     <div class="main_container">
-      <h1 class="main_topic-title">CSS animation</h1>
+      <h1 class="main_topic-title">CSS Layout</h1>
   
       <!--democode  this is an example I just copied and pasted the link on a html page-->
-      <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="html,result" data-user="taekimura" data-slug-hash="WNbxJXY" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="TAE">
-      <span>See the Pen <a href="https://codepen.io/taekimura/pen/WNbxJXY">
-      TAE</a> by Tae (<a href="https://codepen.io/taekimura">@taekimura</a>)
-      on <a href="https://codepen.io">CodePen</a>.</span>
+      <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="html,result" data-user="kgeuqbex" data-slug-hash="oNgLPdZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="oNgLPdZ">
+        <span>See the Pen <a href="https://codepen.io/kgeuqbex/pen/oNgLPdZ">
+        oNgLPdZ</a> by 辻岡太一 (<a href="https://codepen.io/kgeuqbex">@kgeuqbex</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
       </p>
       <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
   
       <!--descriptions-->
-      <h2>What are CSS Animations?</h2>
-      <p>An animation lets an element gradually change from one style to another.</p>
-      <p>You can change as many CSS properties you want, as many times you want.</p> 
-      <p>To use CSS animation, you must first specify some keyframes for the animation.</p> 
-      <p>Keyframes hold what styles the element will have at certain times.</p>
-  
-  
-      <h2>The @keyframes Rule</h2>
-      <p>When you specify CSS styles inside the <code>@keyframes</code>
-         rule, the animation will gradually change from the current style to the new style at certain times.
+      <h2>what is The position Property</h2>
+      <p>AThe position property specifies the type of positioning method used for an element.
+        There are five different position values:
+        <ul>
+          <li>static</li>
+          <li>relative</li>
+          <li>fixed</li>
+          <li>absolute</li>
+          <li>sticky</li>
+        </ul>
+        Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
       </p>
   
-      <p>To get an animation to work, you must bind the animation to an element.</p>
-      <p> The following example binds the "example" animation to the &lt;div&gt; element. 
-      The animation will last for 4 seconds, and it will gradually change the 
-      background-color of the &lt;div&gt; element from "red" to "yellow"</p>
+  
+      <h2>The rule of position: relative;</h2>
+      <p>An element with position: relative; is positioned relative to its normal position.
+
+        Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+        
+        This &lt;div&gt; element has position: relative;
+        the above is the CSS that is used:</p>
   </div>
     </main>
     <footer>
