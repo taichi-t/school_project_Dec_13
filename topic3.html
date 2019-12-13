@@ -1,41 +1,136 @@
+<!--TAE KIMURA-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>animations</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <script src="https://kit.fontawesome.com/1e1751db70.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="header_bar">
-        <h1 class="header_headerlogo"><img src="img/cssKings-logo.png"></h1>
-        <div class="header_right">
-            <i class="far fa-envelope"></i>
-            <div class="header_search">
-                <div class="header_searchbox"></div>
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
+      <h1 class="header_headerlogo"><img src="img/cssKings-logo.png"></h1>
+      <div class="header_right">
+          <i class="far fa-envelope"></i>
+          <div class="header_search">
+              <div class="header_searchbox"></div>
+              <i class="fas fa-search"></i>
+          </div>
+      </div>
     </header>
     <main>
-      <div class="mai-left">
-        <ul class="mai-listwrap">
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
+      <div class="nav-left">
+        <ul class="nav-listwrap">
+          <li class="nav_pagelist"><a href="./topic1.html">Overflow</a></li>
+          <li class="nav_pagelist"><a href="./topic2.html">The position Property</a></li>
+          <li class="nav_pagelist"><a href="./topic3.html">animation</a></li>
+          <li class="nav_pagelist"><a href="./topic4.html">@keyframes</a></li>
+          <li class="nav_pagelist"><a href="./topic5.html">CSS Float</a></li>
+          <li class="nav_pagelist"><a href="./topic6.html">CSS Display</a></li>
         </ul>
+      </div>
+
+       <!--title-->
+  <div class="main_container">
+      <h1 class="main_topic-title">CSS animation Property</h1>
+  
+      <!--democode  this is an example I just copied and pasted the link on a html page-->
+      <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="taekimura" data-slug-hash="vYEKboM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vYEKboM">
+        <span>See the Pen <a href="https://codepen.io/taekimura/pen/vYEKboM">
+        vYEKboM</a> by Tae (<a href="https://codepen.io/taekimura">@taekimura</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+      <!--descriptions-->
+      <h2>What are CSS Animations?</h2>
+      <p>An animation lets an element gradually change from one style to another.</p>
+      <p>You can change as many CSS properties you want, as many times you want.</p> 
+      <p>To use CSS animation, you must first specify some keyframes for the animation.</p> 
+      <p>Keyframes hold what styles the element will have at certain times.</p><br>
+
+      <p> The animation property is a shorthand property for: </p><br>
+      <ul>
+      <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-name.asp">animation-name</a></li>
+      <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-duration.asp">animation-duration<a></li>
+      <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp">animation-timing-function</a></li> 
+      <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-duration.asp">animation-delay</a></li>
+      <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp">animation-iteration-count</a></li> 
+      </ul>
+      <p style="font-size:14px";>
+      <strong> Note: </strong> Always specify the animation-duration property, otherwise the duration is 0, and will never be played.
+      </p><br>
+
+      <table class="w3-table-all notranslate">
+          <tbody><tr>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>  
+          <tr>
+            <td>animation-name</td>
+            <td>Specifies the name of the keyframe you want to bind to the selector</td>
+          </tr>
+          <tr>
+            <td>animation-duration</td>
+            <td>Specifies how many seconds or milliseconds an animation takes to complete</td>
+          </tr>
+          <tr>
+            <td>animation-timing-function</td>
+            <td>Specifies the speed curve of the animation</td>
+          </tr>
+          <tr>
+            <td>animation-delay</td>
+            <td>Specifies a delay before the animation will start</td>
+          </tr>
+          <tr>
+            <td>animation-iteration-count</td>
+            <td>Specifies how many times an animation should be played</td>
+          </tr>
+          <tr>
+            <td>animation-direction</td>
+            <td>Specifies whether or not the animation should play in reverse on alternate cycles</td>
+          </tr>
+          <tr>
+            <td>animation-fill-mode</td>
+            <td>Specifies what values are applied by the animation outside the time it is executing</td>
+          </tr>
+          <tr>
+            <td>animation-play-state</td>
+            <td>Specifies whether the animation is running or paused</td>
+          </tr>
+          <tr>
+            <td>initial</td>
+            <td>Sets this property to its default value.</a></td>
+            </tr>
+          <tr>
+            <td>inherit</td>
+            <td>Inherits this property from its parent element. </a></td>
+            </tr>
+        </tbody></table>
     </div>
     </main>
     <footer>
       <div class="footer_section">
         <div class="img_container">
-          <img src="" alt="" />
+          <img src="img/cssKings-logo.png" alt="" class="footer_logo"/>
         </div>
-      </div>
-    </footer>
-  </body>
-</html>
+
+        <ul class="footer_list">
+          <li><a href="https://www.w3schools.com/html/"><i class="fab fa-instagram icon"></i></a></li>
+          <li><a href="https://www.w3schools.com/html/"><i class="fab fa-facebook-square icon"></i></a></li>
+          <li><a href="https://www.w3schools.com/html/"><i class="fab fa-twitter-square icon"></i></a></li>
+        </ul>
+
+        <div>
+          <dl class="footer_data_list">
+            <dt>Email</dt>
+            <dd>xxxxxxxxxxxxx@gmail.com</dd>
+            <dt>phone</dt>
+            <dd>xxx-xxx-xxx</dd>
+          </dl>
+        </div>
+
+        <div><p>&#9400;teamC</p></div>

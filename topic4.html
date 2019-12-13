@@ -1,41 +1,104 @@
+<!--TAE KIMURA-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>keyframes</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <script src="https://kit.fontawesome.com/1e1751db70.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="header_bar">
-        <h1 class="header_headerlogo"><img src="img/cssKings-logo.png"></h1>
-        <div class="header_right">
-            <i class="far fa-envelope"></i>
-            <div class="header_search">
-                <div class="header_searchbox"></div>
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
+      <h1 class="header_headerlogo"><img src="img/cssKings-logo.png"></h1>
+      <div class="header_right">
+          <i class="far fa-envelope"></i>
+          <div class="header_search">
+              <div class="header_searchbox"></div>
+              <i class="fas fa-search"></i>
+          </div>
+      </div>
     </header>
     <main>
-      <div class="mai-left">
-        <ul class="mai-listwrap">
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
+      <div class="nav-left">
+        <ul class="nav-listwrap">
+          <li class="nav_pagelist"><a href="./topic1.html">Overflow</a></li>
+          <li class="nav_pagelist"><a href="./topic2.html">The position Property</a></li>
+          <li class="nav_pagelist"><a href="./topic3.html">animation</a></li>
+          <li class="nav_pagelist"><a href="./topic4.html">@keyframes</a></li>
+          <li class="nav_pagelist"><a href="./topic5.html">CSS Float</a></li>
+          <li class="nav_pagelist"><a href="./topic6.html">CSS Display</a></li>
         </ul>
+      </div>
+
+       <!--title-->
+      <div class="main_container">
+      <h1 class="main_topic-title">CSS @keyframes Rule</h1>
+  
+      <!--democode  this is an example I just copied and pasted the link on a html page-->
+      <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="taekimura" data-slug-hash="RwNRvWJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwNRvWJ">
+        <span>See the Pen <a href="https://codepen.io/taekimura/pen/RwNRvWJ">
+        RwNRvWJ</a> by Tae (<a href="https://codepen.io/taekimura">@taekimura</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+      <!--descriptions-->
+      <h2>What is @keyframes?</h2>
+      <p>The <code>@keyframes</code> rule specifies the animation code.
+        The animation is created by gradually changing from one set of CSS styles to another.
+        During the animation, you can change the set of CSS styles many times.
+        Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete. <br><br>
+        <p style="font-size:14px";>
+        <strong>Tip:</strong> For best browser support, you should always define both the 0% and the 100% selectors. <br>
+        <strong>Note:</strong> Use the animation properties to control the appearance of the animation, and also to bind the animation to selectors. <br>
+        <strong>Note:</strong> The <code>!important</code> rule is ignored in a keyframe (See last example on this page). <br>
+      </p>
+
+      <table class="w3-table-all notranslate">
+      <tbody><tr>
+        <th style="width:20%">Value</th>
+        <th>Description</th>
+      </tr>  
+      <tr>
+        <td><i>animationname</i></td>
+        <td>Required. Defines the name of the animation.</td>
+      </tr><br>
+      <tr>
+        <td><i>keyframes-selector</i></td>
+        <td>Required. Percentage of the animation duration.<p>Legal values:</p><p>0-100%<br>
+        from (same as 0%)<br>
+        to (same as 100%)</p><p><b>Note:</b> You can have many keyframes-selectors in one animation.</p></td>
+      </tr>
+      <tr>
+        <td><i>css-styles</i></td>
+        <td>Required. One or more legal CSS style properties</td>
+      </tr>
+      </tbody>
+      </table>  
     </div>
     </main>
     <footer>
       <div class="footer_section">
         <div class="img_container">
-          <img src="" alt="" />
+          <img src="img/cssKings-logo.png" alt="" class="footer_logo"/>
         </div>
-      </div>
-    </footer>
-  </body>
-</html>
+
+        <ul class="footer_list">
+          <li><a href="https://www.w3schools.com/html/"><i class="fab fa-instagram icon"></i></a></li>
+          <li><a href="https://www.w3schools.com/html/"><i class="fab fa-facebook-square icon"></i></a></li>
+          <li><a href="https://www.w3schools.com/html/"><i class="fab fa-twitter-square icon"></i></a></li>
+        </ul>
+
+        <div>
+          <dl class="footer_data_list">
+            <dt>Email</dt>
+            <dd>xxxxxxxxxxxxx@gmail.com</dd>
+            <dt>phone</dt>
+            <dd>xxx-xxx-xxx</dd>
+          </dl>
+        </div>
+
+        <div><p>&#9400;teamC</p></div>
