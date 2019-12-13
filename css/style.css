@@ -57,24 +57,25 @@ body {
 
 /* main */
 /* please coding main section here  */
-.mai-left {
+
+.nav-left {
   width: 15%;
-  height: auto;
   float: left;
   background-color: #646464;
+  margin: 0;
 }
 
-.mai-listwrap {
+.nav-listwrap {
   text-align: center;
   margin: 35px 30px;
 }
 
-.mai_pagelist {
+.nav_pagelist {
   margin: 15px 0;
   list-style: none;
 }
 
-.mai_pagelist a {
+.nav_pagelist a {
   text-decoration: none;
   color: #fff;
 }
@@ -82,14 +83,18 @@ body {
 .main_container {
   width: 700px;
   height: auto;
-  margin: auto auto 10px auto;
+  margin: auto auto 50px auto;
+}
+
+.main_container h2 {
+  margin: 12px 0;
 }
 
 .main_topic-title {
   font-size: 42px;
   color:black;
   font-family: Kadwa, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin:10px auto 10px auto;
+  margin:10px auto 15px auto;
 }
 
 .tbody {
