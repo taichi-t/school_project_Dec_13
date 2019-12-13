@@ -25,17 +25,80 @@
           <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
           <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
           <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
-          <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
+          <li class="mai_pagelist"><a href="#">CSS Float</a></li>
           <li class="mai_pagelist"><a href="#">CSS CSS CSS</a></li>
         </ul>
     </div>
+
+    <!--title-->
+    <div class="main_container">
+      <h1 class="main_topic-title">CSS Layout - float and clear</h1>
+  
+      <!--democode  this is an example I just copied and pasted the link on a html page-->
+      <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="html,result" data-user="mai5hara" data-slug-hash="gQLmdB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="aaa">
+        <span>See the Pen <a href="https://codepen.io/mai5hara/pen/gQLmdB">
+        aaa</a> by mai gohara (<a href="https://codepen.io/mai5hara">@mai5hara</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  
+      <!--descriptions-->
+      <h2>What is the float Property?</h2>
+      <p>The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.</p>
+      <p>The float property can have one of the following values:</p>
+        
+      <ul>
+        <li>left - The element floats to the left of its container</li>
+        <li>right - The element floats to the right of its container</li>
+        <li>none - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+        <li>inherit - The element inherits the float value of its parent</li>
+      </ul>
+
+      <p>In its simplest use, the float property can be used to wrap text around images.</p>
+  
+      <h2>The clear Property</h2>
+      <p>The clear property specifies what elements can float beside the cleared element and on which side.</p>
+      <p>The clear property can have one of the following values:</p>
+
+      <ul>
+        <li>none - Allows floating elements on both sides. This is default</li>
+        <li>left - No floating elements allowed on the left side</li>
+        <li>right- No floating elements allowed on the right side</li>
+        <li>both - No floating elements allowed on either the left or the right side</li>
+        <li>inherit - The element inherits the clear value of its parent</li>
+      </ul>
+
+      <p>The most common way to use the clear property is after you have used a float property on an element.</p>
+      <p>When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.</p>
+      <p>The following example clears the float to the left. Means that no floating elements are allowed on the left side (of the div):</p>
+      
+    </div>
     </main>
     <footer>
-      <div class="footer_section">
-        <div class="img_container">
-          <img src="" alt="" />
+        <div class="footer_section">
+          <div class="img_container">
+            <img src="img/cssKings-logo.png" alt="" class="footer_logo"/>
+          </div>
+  
+          <ul class="footer_list">
+            <li><a href="https://www.w3schools.com/html/"><i class="fab fa-instagram icon"></i></a></li>
+            <li><a href="https://www.w3schools.com/html/"><i class="fab fa-facebook-square icon"></i></a></li>
+            <li><a href="https://www.w3schools.com/html/"><i class="fab fa-twitter-square icon"></i></a></li>
+          </ul>
+  
+          <div>
+            <dl class="footer_data_list">
+              <dt>Email</dt>
+              <dd>xxxxxxxxxxxxx@gmail.com</dd>
+              <dt>phone</dt>
+              <dd>xxx-xxx-xxx</dd>
+            </dl>
+          </div>
+  
+          <div><p>&#9400;teamC</p></div>
+  
+  
         </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>
