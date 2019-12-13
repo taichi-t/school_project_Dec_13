@@ -278,3 +278,35 @@
   [aria-disabled] {
 	cursor: default;
   }
+
+  .footer_section { 
+    background-color: #c1d8e8;
+    text-align: center;
+    margin: 8px;
+    font-size: 15px;
+    height: 165px;
+    width: 100%;
+  }
+  
+  .footer_logo {
+    padding-top: 0px;
+    width: 100px;
+  }
+  
+  .footer_list {
+    padding-top: 3px;
+    margin: 0 auto;
+    width: 200px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+#content {
+    padding: 0px 0% 0 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1071px;
+    height: 537px;
+
+}
