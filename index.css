@@ -10,6 +10,283 @@
 body {
     font-size: 16px;
     background-color: #fcfcfc;
+    display: inline-grid;
 }
 
 
+h1 {
+    text-align: center;
+    color: royalblue;
+    
+}
+
+#board {
+    height: 217px;
+    width: 700px;
+    margin: auto;
+    background-color: #c1d8e8;
+    float: center;
+
+}
+
+#board div {
+    height: 150px;
+    width: 150px;
+    margin: 50px 40px 10px 40px;
+   
+    float: left; /* or display: inline-block*/
+}
+
+#first-card {
+    transition: 0.7s;
+    background-color: black;
+
+}
+
+#first-card:hover {
+    background-color: yellow;
+    transform: translateX(50px);
+}
+
+#second-card {
+    background-color: brown;
+    transition: background-color 1s, transform 1s 0s ease;
+}
+
+#second-card:hover {
+    background-color: darkturquoise;
+    transform: scale(3);
+    
+}
+
+#third-card {
+    transition: background-color 1s, transform 2s 0s ease;
+    background-color: purple;
+
+}
+
+#third-card:hover {
+    background-color:darkorchid;
+    transform: rotateX(180deg);
+}
+
+#fourth-card {
+    transition: background-color 1s, transform 1s 0s ease;
+    background-color: darkkhaki;  
+
+}
+
+#fourth-card:hover {
+    background-color: rgb(20, 20, 12);
+    transform: rotateX(180deg);
+}
+
+#fifth-card {
+    background-color: orange;
+    transition: background-color 1s, transform 1s 0s ease;
+}
+
+#fifth-card:hover {
+    background-color: rgb(255, 0, 21);
+    transform: skewY(90deg);
+}
+
+@keyframes changeColor {
+    from{ transform: translateX(20px);}
+    to{ transform: translateX(700px);}
+}
+
+#sixth-card {
+    background-color: palegreen;
+}
+
+#sixth-card:hover {
+    animation-name: changeColor;
+    transition: background-color 1s, transform 1s 1s ease;
+    animation-duration: 4s;
+    animation-play-state: running;
+    background-color: deeppink;
+}
+
+
+
+
+
+  /* cards style */
+    h2 {
+    background: #666;
+    color:black;
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+    }
+    .cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.4s ease 0s;
+    width: 20%;
+    }
+    .cardBox:hover .card {
+    transform: rotateY(180deg);
+    }
+    .card {
+    background: #666666;
+    cursor: pointer;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease 0s;
+    width: 100%;
+    }
+    .card p {
+    margin-bottom: 1.8em;
+    }
+    .card .front,
+    .card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em 0.7em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    }
+    .card .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+    }
+    .card .back {
+    transform: rotateY( 180deg);
+    }
+    .card .back a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+    }
+    .card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+    }
+    .cardBox:nth-child(1) .card .back {
+    background: #8ebf42;
+    }
+    .cardBox:nth-child(2) .card .back {
+    background: #8ebf42;
+    }
+    .cardBox:nth-child(3) .card .back {
+    background: #8ebf42;
+    }
+    .cardBox:nth-child(4) .card .back {
+    background: #8ebf42;
+    }
+    .cardBox:nth-child(5) .card .back {
+    background: #8ebf42;
+    }
+    .cardBox:nth-child(6) .card .back {
+    background: #8ebf42;
+    }
+    .cardBox:nth-child(7) .card .back {
+    background: #8ebf42;
+    }
+    .cardBox:nth-child(8) .card .back {
+    background: #8ebf42;
+    }
+    .cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+    }
+    .cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+    }
+    .cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+    }
+    @-webkit-keyframes giro {
+    from {
+    transform: rotateY(180deg);
+    }
+    to {
+    transform: rotateY(0deg);
+    }
+    }
+    @keyframes giro {
+    from {
+    transform: rotateY(180deg);
+    }
+    to {
+    transform: rotateY(0deg);
+    }
+    }
+    @media screen and (max-width: 767px) {
+    .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+    }
+    .card {
+    height: 285px;
+    }
+    .cardBox:last-child {
+    margin-bottom: 3%;
+    }
+    }
+    @media screen and (max-width: 480px) {
+    .cardBox {
+    width: 94.5%;
+    }
+    .card {
+    height: 260px;
+    }
+    
+.footer_section { 
+    background-color: #c1d8e8;
+    text-align: center;
+    margin: 8px;
+    font-size: 15px;
+    height: 165px;
+    width: 100%;
+  }
+  
+  .footer_logo {
+    padding-top: 0px;
+    width: 100px;
+  }
+  
+  .footer_list {
+    padding-top: 3px;
+    margin: 0 auto;
+    width: 200px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+#content {
+    padding: 0px 0% 0 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1071px;
+    height: 537px;
+
+}
+
+#row {
+    float: left;
+    clear: both;
+    width: 80%;
+}
