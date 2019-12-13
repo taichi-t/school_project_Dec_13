@@ -82,15 +82,35 @@ body {
 .main_container {
   width: 700px;
   height: auto;
-  margin: auto;
+  margin: auto auto 10px auto;
 }
 
 .main_topic-title {
   font-size: 42px;
-  color: #115843;
-  font-family: Kadwa, "Open Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-  margin: 15px;
+  color:black;
+  font-family: Kadwa, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin:10px auto 10px auto;
+}
+
+.tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.w3-table, .w3-table-all {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ccc;
+}
+.table{
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+tr:nth-child(odd) {
+	background: #EEEEEE;
 }
 
 /* main */
